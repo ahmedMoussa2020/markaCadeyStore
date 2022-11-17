@@ -2,7 +2,7 @@ const data = {
   products: [
     {
       name: "Spicy Green Sauce",
-      slug: "best sauce",
+      slug: "Best Sauce",
       category: "Food",
       image: "/images/sause2.png", // 679px × 829px
       price: 55,
@@ -15,7 +15,7 @@ const data = {
 
     {
       name: "Spicy Dadlar Sauce",
-      slug: "best sauce",
+      slug: "Best Sauce",
       category: "",
       image: "/images/sause2.png",
       price: 55,
@@ -28,7 +28,7 @@ const data = {
 
     {
       name: "Spicy Coconut Sauce",
-      slug: "best sauce",
+      slug: "Best Sauce",
       category: "Food",
       image: "/images/sause2.png",
       price: 55,
@@ -41,7 +41,7 @@ const data = {
 
     {
       name: "Spicy Coconut Sauce",
-      slug: "best sauce",
+      slug: "Best Sauce",
       category: "Food",
       image: "/images/sause2.png",
       price: 55,
