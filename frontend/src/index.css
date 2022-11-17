@@ -14,6 +14,32 @@ header {
 
 header a{
   color: #ffffff;
-  font-weight: lighter;
+  font-weight: bolder;
   text-decoration: none;
+} 
+
+main{
+  padding: 1rem;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product{
+  border: 1px #404040 solid;
+  margin: 1rem;
+  /* border-radius: 5px; */
+}
+
+.product img{
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-info{
+  padding: 1rem;
+  /* justify-content: center; */
 }
