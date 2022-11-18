@@ -7,6 +7,8 @@ import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import StorefrontIcon from '@mui/icons-material/Storefront';
+import Banner from "./components/Banner";
+// import Banner from "./screens/Banner";
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
         </header>
 
         <main>
+        <Banner />
           <Container>
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
