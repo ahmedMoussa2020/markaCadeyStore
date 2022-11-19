@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: "1",
       name: "Spicy Green Sauce",
       slug: "Best Green Sauce",
       category: "Food",
@@ -14,6 +15,7 @@ const data = {
     },
 
     {
+      _id: "2",
       name: "Spicy Dadlar Sauce",
       slug: "Best Dadlar Sauce",
       category: "",
@@ -27,6 +29,7 @@ const data = {
     },
 
     {
+      _id: "3",
       name: "Spicy Coconut Sauce",
       slug: "Best Coconut Sauce",
       category: "Food",
@@ -40,6 +43,7 @@ const data = {
     },
 
     {
+      _id: "4",
       name: "Spicy Chutney Sauce",
       slug: "Best Chutney Sauce",
       category: "Food",
