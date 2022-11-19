@@ -6,7 +6,7 @@ const data = {
       category: "Food",
       image: "/images/sause2.png", // 679px × 829px
       price: 55,
-      countInStock: 15,
+      countInStock: 10,
       brand: "Marka Cadey",
       rating: 4.5,
       numReviews: 10,

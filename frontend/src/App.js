@@ -1,12 +1,12 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import StorefrontIcon from '@mui/icons-material/Storefront';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import StorefrontIcon from "@mui/icons-material/Storefront";
 import Banner from "./components/Banner";
 // import Banner from "./screens/Banner";
 
@@ -27,11 +27,12 @@ function App() {
                 <Nav.Link href="#aboutUs">About Us</Nav.Link>
                 <Nav.Link href="#contactUs">Contact Us</Nav.Link>
               </Nav>
-
               <Nav>
-                <Nav.Link href="#deets"><ShoppingCartIcon/></Nav.Link>
+                <Nav.Link href="#deets">
+                  <StorefrontIcon />
+                </Nav.Link>
                 <Nav.Link eventKey={2} href="#memes">
-                  <StorefrontIcon/>
+                  <ShoppingCartIcon />
                 </Nav.Link>
               </Nav>
             </Container>
@@ -39,8 +40,8 @@ function App() {
         </header>
 
         <main>
-        <Banner />
-          <Container>
+          <Banner />
+          <Container className="mt-3">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/" element={<HomeScreen />} />
