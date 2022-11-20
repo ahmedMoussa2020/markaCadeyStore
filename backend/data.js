@@ -1,7 +1,6 @@
 const data = {
   products: [
     {
-      _id: "1",
       name: "Spicy Green Sauce",
       slug: "Best Green Sauce",
       category: "Food",
@@ -11,25 +10,23 @@ const data = {
       brand: "Marka Cadey",
       rating: 4.5,
       numReviews: 10,
-      description: "This sauce is highly recommended from the Restaurant",
+      description: "This sauce is highly recommended from the Restaurant"
     },
 
     {
-      _id: "2",
       name: "Spicy Dadlar Sauce",
       slug: "Best Dadlar Sauce",
-      category: "",
+      category: "Food",
       image: "/images/sause2.png",
       price: 55,
       countInStock: 20,
       brand: "Marka Cadey",
       rating: 4.0,
       numReviews: 10,
-      description: "This sauce is highly recommended from the Restaurant",
+      description: "This sauce is highly recommended from the Restaurant"
     },
 
     {
-      _id: "3",
       name: "Spicy Coconut Sauce",
       slug: "Best Coconut Sauce",
       category: "Food",
@@ -39,11 +36,10 @@ const data = {
       brand: "Marka Cadey",
       rating: 4.5,
       numReviews: 14,
-      description: "This sauce is highly recommended from the Restaurant",
+      description: "This sauce is highly recommended from the Restaurant"
     },
 
     {
-      _id: "4",
       name: "Spicy Chutney Sauce",
       slug: "Best Chutney Sauce",
       category: "Food",
@@ -53,7 +49,7 @@ const data = {
       brand: "Marka Cadey",
       rating: 4.5,
       numReviews: 10,
-      description: "This sauce is highly recommended from the Restaurant",
+      description: "This sauce is highly recommended from the Restaurant"
     },
   ],
 };
