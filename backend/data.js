@@ -1,4 +1,20 @@
+import bcrypt from 'bcryptjs';
 const data = {
+  users: [
+    {
+      name: "Ahmed",
+      email: "ahmed.moussaisman92@gmail.com",
+      password: bcrypt.hashSync("ahmed4839"),
+      isAdmin: true,
+    },
+    {
+      name: "Abdalla",
+      email: "abdalla.malmo@gmail.com",
+      password: bcrypt.hashSync("shamsa671220"),
+      isAdmin: true,
+    },
+  ],
+
   products: [
     {
       name: "Spicy Green Sauce",
@@ -10,7 +26,7 @@ const data = {
       brand: "Marka Cadey",
       rating: 4.5,
       numReviews: 10,
-      description: "This sauce is highly recommended from the Restaurant"
+      description: "This sauce is highly recommended from the Restaurant",
     },
 
     {
@@ -23,7 +39,7 @@ const data = {
       brand: "Marka Cadey",
       rating: 4.0,
       numReviews: 10,
-      description: "This sauce is highly recommended from the Restaurant"
+      description: "This sauce is highly recommended from the Restaurant",
     },
 
     {
@@ -36,7 +52,7 @@ const data = {
       brand: "Marka Cadey",
       rating: 4.5,
       numReviews: 14,
-      description: "This sauce is highly recommended from the Restaurant"
+      description: "This sauce is highly recommended from the Restaurant",
     },
 
     {
@@ -49,7 +65,7 @@ const data = {
       brand: "Marka Cadey",
       rating: 4.5,
       numReviews: 10,
-      description: "This sauce is highly recommended from the Restaurant"
+      description: "This sauce is highly recommended from the Restaurant",
     },
   ],
 };
