@@ -18,6 +18,7 @@ const initialState = {
       : [],
   },
 };
+
 function reducer(state, action) {
   switch (action.type) {
     case "CART_ADD_ITEM":
@@ -40,6 +41,9 @@ function reducer(state, action) {
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
       return { ...state, cart: { ...state.cart, cartItems } };
     }
+    case 'CART_CLEAR':
+      return { ...state, cart: { ...state.cart, cartItems: [] } };
+      
     case "USER_SIGNIN":
       return { ...state, userInfo: action.payload };
     case "USER_SIGNOUT":
