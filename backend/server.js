@@ -11,17 +11,16 @@ dotenv.config();
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
-    console.log("connected to db");
+    console.log("connected to DB");
   })
   .catch((err) => {
-    console.log(err.message);
+    console.log(err.message, 'HERE IS THE ERROR');
   });
 
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({ extend: true }));
-
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/seed", seedRouter);
 app.use("/api/products", productRouter);
