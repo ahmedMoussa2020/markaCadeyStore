@@ -16,6 +16,11 @@ main {
   flex: 1;
 }
 
+/* .cartAndStore{
+  justify-content: center;
+} */
+
+
 .products {
   display: flex;
   flex-wrap: wrap;

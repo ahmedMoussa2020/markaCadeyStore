@@ -21,6 +21,7 @@ import SignupScreen from "./screens/SignupScreen";
 import PaymentMethodScreen from "./screens/PaymentMethodScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
+import OrderHistoryScreen from "./screens/OrderHistoryScreen";
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -34,28 +35,24 @@ function App() {
     localStorage.removeItem("paymentMethod");
   };
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <div className="d-flex flex-column site-container">
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar bg="dark" variant="dark">
-            <Container>
+          <Navbar  bg="dark" variant="dark" expand="lg" >
+            <Container >
+
+
               <LinkContainer to="/">
                 <Navbar.Brand>Marka Cadey Store</Navbar.Brand>
               </LinkContainer>
 
-              {/* <Nav className="me-auto">
-                <Link to="/cart" className="nav-link">
-                  Cart
-                  {cart.cartItems.length > 0 && (
-                    <Badge pill bg="danger">
-                      {cart.cartItems.length}
-                    </Badge>
-                  )}
-                </Link>
-              </Nav> */}
 
-              <Nav className=" text-center">
+
+              <Navbar.Toggle aria-container="basic-navbar-nav"/>
+              <Navbar.Collapse id="basic-navbar-nac" className="justify-content-center">
+              
+              <Nav className="text-center">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="#Spicy">Spicy Sauce</Nav.Link>
                 <Nav.Link href="#sambusa">Sambusa</Nav.Link>
@@ -63,16 +60,20 @@ function App() {
                 <Nav.Link href="#contactUs">Contact Us</Nav.Link>
               </Nav>
               <Nav>
+
+              {/* <Navbar.Toggle aria-container="basic-navbar-nav"/>
+              <Navbar.Collapse id="basic-navbar-nac"> */}
+
+
+
                 <Nav.Link href="#deets" className="me-auto">
                   <StorefrontIcon />
-                  {/* {cart.cartItems.length > 0 && (
-                    <Badge pill bg="danger">
-                      {cart.cartItems.length}
-                    </Badge>
-                  )} */}
+
                 </Nav.Link>
 
                 <Nav.Link href="/cart" className="me-auto">
+                {/* <StorefrontIcon /> */} 
+
                   <ShoppingCartIcon />
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
@@ -80,6 +81,8 @@ function App() {
                     </Badge>
                   )}
                 </Nav.Link>
+
+                {/* </Navbar.Collapse> */}
                 {userInfo ? (
                   <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
                     <LinkContainer to="/profile">
@@ -103,7 +106,11 @@ function App() {
                   </Link>
                 )}
               </Nav>
+              
+
+              </Navbar.Collapse>
             </Container>
+            
           </Navbar>
         </header>
 
@@ -119,7 +126,9 @@ function App() {
               <Route path="/shipping" element={<ShippingAddressScreen />} />
               <Route path="/payment" element={<PaymentMethodScreen />} />
               <Route path="/order/:id" element={<OrderScreen />} />
+              <Route path="/orderhistory" element={<OrderHistoryScreen />} />
               <Route path="/" element={<HomeScreen />} />
+
             </Routes>
           </Container>
         </main>
