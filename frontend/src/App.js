@@ -26,6 +26,7 @@ import ProfileScreen from "./screens/ProfileScreen";
 import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardScreen from "./screens/DashboardScreen";
 import AdminRoute from "./components/AdminRoute";
+import ProductListScreen from "./screens/ProductListScreen";
 import Footer from "./components/Footer";
 import FooterTasty from "./components/FooterTasty";
 import Sambusa from "./components/Sambusa";
@@ -61,21 +62,29 @@ function App() {
                 className="justify-content-center"
               >
                 <Nav className="text-center">
-                  <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
-                  <Nav.Link as={Link} to={"Spicy"}>Spicy Sauce</Nav.Link>
-                  <Nav.Link as={Link} to={"sambusa"}>Sambusa</Nav.Link>
-                  <Nav.Link as={Link} to={"about"}>About Us</Nav.Link>
-                  <Nav.Link as={Link} to={"contact"}>Contact Us</Nav.Link>
+                  <Nav.Link as={Link} to={"/"}>
+                    Home
+                  </Nav.Link>
+                  <Nav.Link as={Link} to={"Spicy"}>
+                    Spicy Sauce
+                  </Nav.Link>
+                  <Nav.Link as={Link} to={"sambusa"}>
+                    Sambusa
+                  </Nav.Link>
+                  <Nav.Link as={Link} to={"about"}>
+                    About Us
+                  </Nav.Link>
+                  <Nav.Link as={Link} to={"contact"}>
+                    Contact Us
+                  </Nav.Link>
                 </Nav>
 
-
-
-
-
-
-
                 <Nav>
-                  <Nav.Link as={Link} to={"http://www.markacadeyrestaurant.com/"} className="me-auto">
+                  <Nav.Link
+                    as={Link}
+                    to={"http://www.markacadeyrestaurant.com/"}
+                    className="me-auto"
+                  >
                     <StorefrontIcon />
                   </Nav.Link>
 
@@ -119,13 +128,13 @@ function App() {
                       <LinkContainer to="/admin/dashboard">
                         <NavDropdown.Item>Dashboard</NavDropdown.Item>
                       </LinkContainer>
-                      <LinkContainer to="/admin/productlist">
+                      <LinkContainer to="/admin/products">
                         <NavDropdown.Item>Products</NavDropdown.Item>
                       </LinkContainer>
-                      <LinkContainer to="/admin/orderlist">
+                      <LinkContainer to="/admin/orders">
                         <NavDropdown.Item>Orders</NavDropdown.Item>
                       </LinkContainer>
-                      <LinkContainer to="/admin/userlist">
+                      <LinkContainer to="/admin/users">
                         <NavDropdown.Item>Users</NavDropdown.Item>
                       </LinkContainer>
                     </NavDropdown>
@@ -159,11 +168,6 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
 
-
-
-
-
-
               {/* Admin Routes */}
               <Route
                 path="/admin/dashboard"
@@ -190,6 +194,16 @@ function App() {
                   </ProtectedRoute>
                 }
               ></Route>
+
+              <Route
+                path="/admin/products"
+                element={
+                  <AdminRoute>
+                    <ProductListScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+
               <Route path="/" element={<HomeScreen />} />
             </Routes>
             <FooterTasty />
