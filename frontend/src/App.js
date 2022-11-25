@@ -28,6 +28,9 @@ import DashboardScreen from "./screens/DashboardScreen";
 import AdminRoute from "./components/AdminRoute";
 import Footer from "./components/Footer";
 import FooterTasty from "./components/FooterTasty";
+import Sambusa from "./components/Sambusa";
+import Contact from "./components/Contact";
+import About from "./components/About";
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -46,7 +49,7 @@ function App() {
       <div className="d-flex flex-column site-container">
         <ToastContainer position="bottom-center" limit={1} />
         <header className="sticky-nav">
-          <Navbar  bg="dark" variant="dark" expand="lg" >
+          <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand>Marka Cadey Store</Navbar.Brand>
@@ -57,22 +60,26 @@ function App() {
                 id="basic-navbar-nac"
                 className="justify-content-center"
               >
-                <Nav className="text-center" >
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="#Spicy">Spicy Sauce</Nav.Link>
-                  <Nav.Link href="#sambusa">Sambusa</Nav.Link>
-                  <Nav.Link href="#aboutUs">About Us</Nav.Link>
-                  <Nav.Link href="#contactUs">Contact Us</Nav.Link>
+                <Nav className="text-center">
+                  <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+                  <Nav.Link as={Link} to={"Spicy"}>Spicy Sauce</Nav.Link>
+                  <Nav.Link as={Link} to={"sambusa"}>Sambusa</Nav.Link>
+                  <Nav.Link as={Link} to={"about"}>About Us</Nav.Link>
+                  <Nav.Link as={Link} to={"contact"}>Contact Us</Nav.Link>
                 </Nav>
-                <Nav>
-                  {/* <Navbar.Toggle aria-container="basic-navbar-nav"/>
-              <Navbar.Collapse id="basic-navbar-nac"> */}
 
-                  <Nav.Link href="#deets" className="me-auto">
+
+
+
+
+
+
+                <Nav>
+                  <Nav.Link as={Link} to={"http://www.markacadeyrestaurant.com/"} className="me-auto">
                     <StorefrontIcon />
                   </Nav.Link>
 
-                  <Nav.Link href="/cart" className="me-auto">
+                  <Nav.Link as={Link} to={"cart"} className="me-auto">
                     {/* <StorefrontIcon /> */}
 
                     <ShoppingCartIcon />
@@ -148,6 +155,14 @@ function App() {
               <Route path="/placeorder" element={<PlaceOrderScreen />} />
               <Route path="/shipping" element={<ShippingAddressScreen />} />
               <Route path="/payment" element={<PaymentMethodScreen />} />
+              <Route path="/sambusa" element={<Sambusa />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+
+
+
+
+
 
               {/* Admin Routes */}
               <Route
