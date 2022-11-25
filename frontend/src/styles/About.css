@@ -1,0 +1,16 @@
+.about-container {
+  /* border: 3px solid #fff; */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.about-container li{
+  list-style-type: none;
+}
+
+.about-child {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}  
+
