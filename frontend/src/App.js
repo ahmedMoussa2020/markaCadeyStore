@@ -45,8 +45,8 @@ function App() {
     <BrowserRouter>
       <div className="d-flex flex-column site-container">
         <ToastContainer position="bottom-center" limit={1} />
-        <header>
-          <Navbar bg="dark" variant="dark" expand="lg">
+        <header className="sticky-nav">
+          <Navbar  bg="dark" variant="dark" expand="lg" >
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand>Marka Cadey Store</Navbar.Brand>
@@ -57,7 +57,7 @@ function App() {
                 id="basic-navbar-nac"
                 className="justify-content-center"
               >
-                <Nav className="text-center">
+                <Nav className="text-center" >
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="#Spicy">Spicy Sauce</Nav.Link>
                   <Nav.Link href="#sambusa">Sambusa</Nav.Link>
@@ -181,10 +181,6 @@ function App() {
             <Footer />
           </Container>
         </main>
-
-        {/* <footer>
-          <div className="text-center">All rights reserved</div>
-        </footer> */}
       </div>
     </BrowserRouter>
   );
