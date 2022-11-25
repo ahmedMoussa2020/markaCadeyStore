@@ -1,0 +1,77 @@
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #094fb6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #557dba;
+}
+
+.contact_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 50%;
+  float: right;
+}
+
+
+.contact_title {
+  text-align: center;
+}
+
+.column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column img {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 215px;
+  background-position: right center;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.float-container {
+  /* border: 3px; */
+  padding: 20px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  text-align: center;
+}  
+
+.float-child img{
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
