@@ -34,7 +34,8 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from "./screens/OrdersListScreen";
-
+import UserListScreen from './screens/UserListScreen';
+import SpicySauce from "./components/SpicySauce";
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -68,7 +69,7 @@ function App() {
                   <Nav.Link as={Link} to={"/"}>
                     Home
                   </Nav.Link>
-                  <Nav.Link as={Link} to={"Spicy"}>
+                  <Nav.Link as={Link} to={"spicysauce"}>
                     Spicy Sauce
                   </Nav.Link>
                   <Nav.Link as={Link} to={"sambusa"}>
@@ -170,6 +171,7 @@ function App() {
               <Route path="/sambusa" element={<Sambusa />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
+              <Route path="/spicysauce" element={<SpicySauce />} />
 
               {/* Admin Routes */}
               <Route
@@ -206,6 +208,17 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
+
+<Route
+                path="/admin/users"
+                element={
+                  <AdminRoute>
+                    <UserListScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+
+
 
               <Route
                 path="/admin/products"
