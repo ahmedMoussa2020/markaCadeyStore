@@ -33,6 +33,8 @@ import Sambusa from "./components/Sambusa";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import ProductEditScreen from './screens/ProductEditScreen';
+import OrderListScreen from "./screens/OrdersListScreen";
+
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -196,6 +198,15 @@ function App() {
                 }
               ></Route>
 
+<Route
+                path="/admin/orders"
+                element={
+                  <AdminRoute>
+                    <OrderListScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+
               <Route
                 path="/admin/products"
                 element={
@@ -214,7 +225,7 @@ function App() {
                 }
               ></Route>
 
-              
+
 
               <Route path="/" element={<HomeScreen />} />
             </Routes>
