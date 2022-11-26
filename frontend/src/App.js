@@ -32,6 +32,7 @@ import FooterTasty from "./components/FooterTasty";
 import Sambusa from "./components/Sambusa";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import ProductEditScreen from './screens/ProductEditScreen';
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -203,6 +204,17 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
+
+<Route
+                path="/admin/product/:id"
+                element={
+                  <AdminRoute>
+                    <ProductEditScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+
+              
 
               <Route path="/" element={<HomeScreen />} />
             </Routes>
