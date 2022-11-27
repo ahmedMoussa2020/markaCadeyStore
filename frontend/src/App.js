@@ -35,7 +35,7 @@ import About from "./components/About";
 import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from "./screens/OrdersListScreen";
 import UserListScreen from './screens/UserListScreen';
-import SpicySauce from "./components/SpicySauce";
+import SpicySauce from "./components/HomeScreen";
 // import Banner from "./screens/Banner";
 
 function App() {
