@@ -116,3 +116,11 @@ main {
   border-bottom: 0.2rem solid #094fb6;
   color: #094fb6;
 }
+
+.nav_right{
+  margin-left: 20%;
+}
+
+.text-center{
+margin-left: 155px;
+}

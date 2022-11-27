@@ -84,7 +84,7 @@ function App() {
                   </Nav.Link>
                 </Nav>
 
-                <Nav>
+                <Nav className="nav_right">
                   <Nav.Link
                     as={Link}
                     to={"http://www.markacadeyrestaurant.com/"}
