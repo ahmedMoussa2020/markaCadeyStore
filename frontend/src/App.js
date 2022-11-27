@@ -36,6 +36,7 @@ import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from "./screens/OrdersListScreen";
 import UserListScreen from './screens/UserListScreen';
 import SpicySauce from "./components/HomeScreen";
+import UserEditScreen from './screens/UserEditScreen';
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -238,6 +239,16 @@ function App() {
                 }
               ></Route>
 
+<Route
+                path="/admin/user/:id"
+                element={
+                  <AdminRoute>
+                    <UserEditScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+
+              
 
 
               <Route path="/" element={<HomeScreen />} />
