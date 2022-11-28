@@ -37,6 +37,7 @@ import OrderListScreen from "./screens/OrdersListScreen";
 import UserListScreen from './screens/UserListScreen';
 import SpicySauce from "./components/HomeScreen";
 import UserEditScreen from './screens/UserEditScreen';
+import ServicesScreen from "./components/ServicesScreen";
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -153,11 +154,15 @@ function App() {
         <main>
           <Banner />
           <Container className="mt-3">
+          <ServicesScreen />
+
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
               <Route path="/signup" element={<SignupScreen />} />
+              <Route path="/servicesscreen" element={<ServicesScreen />} />
+
               <Route
                 path="/profile"
                 element={
