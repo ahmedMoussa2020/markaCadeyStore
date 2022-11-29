@@ -54,7 +54,7 @@ function App() {
   };
   return (
     <BrowserRouter>
-      <div className="d-flex flex-column site-container">
+      {/* <div className="d-flex flex-column site-container"> */}
         <ToastContainer position="bottom-center" limit={1} />
         <header className="sticky-nav">
           <Navbar bg="dark" variant="dark" expand="lg">
@@ -150,8 +150,8 @@ function App() {
           </Navbar>
         </header>
 
-        <main>
-          <Container className="mt-3">
+        {/* <main> */}
+          {/* <Container> */}
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="contactscreen" element={<ContactScreen />} />
@@ -254,9 +254,9 @@ function App() {
             <Footer />
 
 
-          </Container>
-        </main>
-      </div>
+          {/* </Container> */}
+        {/* </main> */}
+      {/* </div> */}
     </BrowserRouter>
   );
 }
