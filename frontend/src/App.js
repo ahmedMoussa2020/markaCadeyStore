@@ -32,12 +32,13 @@ import FooterTasty from "./components/FooterTasty";
 import Sambusa from "./components/Sambusa";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import ProductEditScreen from './screens/ProductEditScreen';
+import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrdersListScreen";
-import UserListScreen from './screens/UserListScreen';
+import UserListScreen from "./screens/UserListScreen";
 import SpicySauce from "./components/HomeScreen";
-import UserEditScreen from './screens/UserEditScreen';
+import UserEditScreen from "./screens/UserEditScreen";
 import ServicesScreen from "./components/ServicesScreen";
+import ContactScreen from "./components/ContactScreen";
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -80,7 +81,7 @@ function App() {
                   <Nav.Link as={Link} to={"about"}>
                     About Us
                   </Nav.Link>
-                  <Nav.Link as={Link} to={"contact"}>
+                  <Nav.Link as={Link} to={"contactscreen"}>
                     Contact Us
                   </Nav.Link>
                 </Nav>
@@ -95,7 +96,6 @@ function App() {
                   </Nav.Link>
 
                   <Nav.Link as={Link} to={"cart"} className="me-auto">
-                    {/* <StorefrontIcon /> */}
 
                     <ShoppingCartIcon />
                     {cart.cartItems.length > 0 && (
@@ -105,7 +105,6 @@ function App() {
                     )}
                   </Nav.Link>
 
-                  {/* </Navbar.Collapse> */}
                   {userInfo ? (
                     <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
                       <LinkContainer to="/profile">
@@ -152,12 +151,10 @@ function App() {
         </header>
 
         <main>
-          <Banner />
           <Container className="mt-3">
-          <ServicesScreen />
-
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
+              <Route path="contactscreen" element={<ContactScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
               <Route path="/signup" element={<SignupScreen />} />
@@ -175,11 +172,11 @@ function App() {
               <Route path="/shipping" element={<ShippingAddressScreen />} />
               <Route path="/payment" element={<PaymentMethodScreen />} />
               <Route path="/sambusa" element={<Sambusa />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/contactscreen" element={<ContactScreen />} />
+              
               <Route path="/about" element={<About />} />
               <Route path="/spicysauce" element={<SpicySauce />} />
 
-              {/* Admin Routes */}
               <Route
                 path="/admin/dashboard"
                 element={
@@ -206,7 +203,7 @@ function App() {
                 }
               ></Route>
 
-<Route
+              <Route
                 path="/admin/orders"
                 element={
                   <AdminRoute>
@@ -215,7 +212,7 @@ function App() {
                 }
               ></Route>
 
-<Route
+              <Route
                 path="/admin/users"
                 element={
                   <AdminRoute>
@@ -223,8 +220,6 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
-
-
 
               <Route
                 path="/admin/products"
@@ -235,7 +230,7 @@ function App() {
                 }
               ></Route>
 
-<Route
+              <Route
                 path="/admin/product/:id"
                 element={
                   <AdminRoute>
@@ -244,7 +239,7 @@ function App() {
                 }
               ></Route>
 
-<Route
+              <Route
                 path="/admin/user/:id"
                 element={
                   <AdminRoute>
@@ -253,13 +248,12 @@ function App() {
                 }
               ></Route>
 
-              
-
-
               <Route path="/" element={<HomeScreen />} />
+              
             </Routes>
-            <FooterTasty />
             <Footer />
+
+
           </Container>
         </main>
       </div>

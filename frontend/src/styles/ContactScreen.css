@@ -1,0 +1,39 @@
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  
+}
+
+.float-child h2{
+  margin-left: -71%;
+}
+
+.float-child p{
+  margin-left: -35%;
+}
+
+.float-container form{
+  margin-right: -240px;
+  border-radius: 10px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  /* border: 2px solid red; */
+  position: inherit;
+}
+
+/* .blue {
+  background-repeat: no-repeat;
+  background-size: 215px;
+  background-position: right center;
+} */
+
+.float-child img{
+  margin-right: -520px;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}

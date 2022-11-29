@@ -1,0 +1,40 @@
+.feature_container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.feature_div{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 35px 0;
+}
+
+.feature_title {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  /* border: 2px solid red; */
+  margin-right: 280px;
+}  
+
+.feature_title h3{
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.feature_title p{
+  /* font-size: 1.75rem; */
+  /* font-weight: bold; */
+  margin-top: 1.5rem !important;
+}
+
+.feature_image img{
+  vertical-align: middle;
+  border-style: none;
+  width: 250px;
+  float: right;
+  border-radius: 10px;
+}

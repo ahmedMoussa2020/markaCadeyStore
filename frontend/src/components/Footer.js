@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer_container ">
 
-
+<div>
 
       <div className="footer_row">
         <div className="col-md-3">
@@ -76,6 +76,7 @@ function Footer() {
           {/* <Link to="/">CoderBakers</Link> */}
           <a href="google.com">CoderBakers</a>
         </p>
+      </div>
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 .site-container {
@@ -54,15 +56,15 @@ main {
   color: #ffc000
 }
 
-.banner {
+/* .banner {
   width: 100%;
   height: 90vh;
-  border-radius: 10px;
+  border-radius: 10px; */
   /* background-position: right; */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   /* background-image: url("/frontend/public/images/home.png"); */
-}
+/* } */
 
 
 
@@ -71,26 +73,26 @@ main {
   color: white;
 }
 
-.center__text {
+/* .center__text {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-}
+} */
 
-
+/* 
 .title {
   font-weight: 650;
   font-size: 60px;
   width: 100%;
   top: 50%;
-}
+} */
 
-.info-title {
+/* .info-title {
   font-size: 20px;
   text-align: center;
-}
+} */
 
 
 

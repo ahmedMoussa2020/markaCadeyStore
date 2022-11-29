@@ -42,31 +42,8 @@ function Contact() {
     <div class="float-container">
       <div class="float-child">
         {" "}
-        <h2>Contact Us</h2>
-        <p>Swing by for a cup of coffee, or leave us a message:</p>
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            placeholder="Your first name.."
-          />
 
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          />
 
-          <input type="text" name="user_email" placeholder="Your Email.." />
-          <textarea
-            name="message"
-            id="subject"
-            placeholder="Write something.."
-          />
-          <input type="submit" value="Send" />
-        </form>
       </div>
 
       <div class="float-child">
@@ -74,6 +51,7 @@ function Contact() {
       </div>
 
       <div className="row">{result ? <Result /> : null}</div>
+      
     </div>
   );
 }

@@ -70,45 +70,63 @@
 
 import Button from "react-bootstrap/esm/Button";
 import { Link } from "react-router-dom";
+import Banner from "../components/Banner";
+import BannerScreen from "../components/NavBar";
+import Contact from "../components/Contact";
+import ContactScreen from "../components/ContactScreen";
+import FeatureProduct from "../components/FeatureProduct";
+import FooterTasty from "../components/FooterTasty";
+import ServicesScreen from "../components/ServicesScreen";
 import styles from "../styles/HomeScreen.css";
+
 // import styles from "../styles/Footer.css";
 
 function HomeScreen() {
   return (
     <div class="home_container">
-      <div>
-      <h2 className="home_title">Fresh Spicy Sauce</h2>
-      <p className="home_description">
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have
-      </p>
+      <Banner />
+      {/* <BannerScreen /> */}
 
-      <div class="home_child">
-        <h3>Best Fresh Orange</h3>
-        <p>
-          but the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be
-        </p>
-        {/* <div class="green">Float Column 1</div> */}
-        <Link to="/spicysauce">
-        <Button >Buy Now</Button>
-        </Link>
-      </div>
-      <br/>
+      <ServicesScreen />
 
-      <div class="home_child">
-        {/* <div class="blue">Float Column 2</div> */}
-        <img src="images/spicy1.png" />
-      </div>
+      <FeatureProduct />
 
-      <div>
-        <h2 className="home_title1">Fresh Spicy Sauce</h2>
-        <p className="home_description1">
+
+
+      {/* <div>
+        <h2 className="home_title">Fresh Spicy Sauce</h2>
+        <p className="home_description">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have
         </p>
-      </div>
+
+        <div class="home_child">
+          <h3>Best Fresh Orange</h3>
+          <p>
+            but the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be
+          </p>
+          <div class="green"></div>
+          <Link to="/spicysauce">
+            <Button>Buy Now</Button>
+          </Link>
+        </div>
+        <br />
+
+        <div class="home_child">
+          <div class="blue"></div>
+          <img src="images/sambusa.png" />
+        </div>
+
+        <div className="product-two">
+          <h2 className="home_title1">Fresh Spicy Sauceeee</h2>
+          <p className="home_description1">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have
+          </p>
+        </div>
       </div>
 
       <div class="home_child1">
@@ -118,16 +136,20 @@ function HomeScreen() {
           humour, or randomised words which don't look even slightly believable.
           If you are going to use a passage of Lorem Ipsum, you need to be
         </p>
-        {/* <div class="green">Float Column 1</div> */}
+        <div class="green"></div>
         <Link to="/sambusa">
-        <Button>Buy Now</Button>
+          <Button>Buy Now</Button>
         </Link>
       </div>
 
       <div class="home_child1">
-        {/* <div class="blue">Float Column 2</div> */}
+        <div class="blue"></div>
         <img src="images/sambusa.png" />
-      </div>
+      </div> */}
+
+      
+      <FooterTasty />
+      
     </div>
   );
 }
