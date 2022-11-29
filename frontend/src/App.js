@@ -57,7 +57,7 @@ function App() {
       {/* <div className="d-flex flex-column site-container"> */}
         <ToastContainer position="bottom-center" limit={1} />
         <header className="sticky-nav">
-          <Navbar bg="dark" variant="dark" expand="lg">
+          <Navbar bg="black" variant="dark" expand="lg">
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand>Marka Cadey Store</Navbar.Brand>

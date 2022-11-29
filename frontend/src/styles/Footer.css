@@ -47,13 +47,13 @@
 
 
 .footer_bottom {
-  background-color: #efeded;
+  background-color: #000000;
   padding: 20px 0;
   font-family: "Roboto", sans-serif;
 }
 
 .footer_bottom p {
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   text-align: center;
 }
