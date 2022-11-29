@@ -1,4 +1,59 @@
 const data = {
+
+
+  sambusas: [
+    {
+      name: "Sambusa Beef",
+      slug: "Sambusa Beef",
+      category: "Food",
+      image: "/images/Sambusa.png", // 679px × 829px
+      price: 12,
+      countInStock: 10,
+      brand: "Marka Cadey",
+      rating: 4.5,
+      numReviews: 10,
+      description: "This Sambusa is made with homemade spicies and its beef",
+    },
+    {
+      name: "Sambusa Tuna",
+      slug: "Sambusa Tuna",
+      category: "Food",
+      image: "/images/Sambusa.png", // 679px × 829px
+      price: 12,
+      countInStock: 10,
+      brand: "Marka Cadey",
+      rating: 4.5,
+      numReviews: 10,
+      description: "This Sambusa is made with homemade spicies and its Tuna",
+    },
+    {
+      name: "Sambusa Veggie",
+      slug: "Sambusa Veggie",
+      category: "Food",
+      image: "/images/Sambusa.png", // 679px × 829px
+      price: 12,
+      countInStock: 10,
+      brand: "Marka Cadey",
+      rating: 4.5,
+      numReviews: 10,
+      description: "This Sambusa is made with homemade spicies and its Veggie",
+    },
+    {
+      name: "Sambusa Potato",
+      slug: "Sambusa Potato",
+      category: "Food",
+      image: "/images/Sambusa.png", // 679px × 829px
+      price: 12,
+      countInStock: 10,
+      brand: "Marka Cadey",
+      rating: 4.5,
+      numReviews: 10,
+      description: "This Sambusa is made with homemade spicies and its Potato",
+    },
+  ],
+
+
+
   products: [
     {
       name: "Spicy Green Sauce",

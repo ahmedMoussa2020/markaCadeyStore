@@ -39,6 +39,8 @@ import SpicySauce from "./components/HomeScreen";
 import UserEditScreen from "./screens/UserEditScreen";
 import ServicesScreen from "./components/ServicesScreen";
 import ContactScreen from "./components/ContactScreen";
+import TopNav from "./components/TopNav";
+import SambusaScreen from "./components/SambusaScreen";
 // import Banner from "./screens/Banner";
 
 function App() {
@@ -54,7 +56,9 @@ function App() {
   };
   return (
     <BrowserRouter>
-      {/* <div className="d-flex flex-column site-container"> */}
+    <TopNav />
+
+      <div className="site-container">
         <ToastContainer position="bottom-center" limit={1} />
         <header className="sticky-nav">
           <Navbar bg="black" variant="dark" expand="lg">
@@ -248,6 +252,7 @@ function App() {
                 }
               ></Route>
 
+              <Route path="/sambusa/:slug" element={<SambusaScreen />} />
               <Route path="/" element={<HomeScreen />} />
               
             </Routes>
@@ -256,7 +261,7 @@ function App() {
 
           {/* </Container> */}
         {/* </main> */}
-      {/* </div> */}
+      </div>
     </BrowserRouter>
   );
 }

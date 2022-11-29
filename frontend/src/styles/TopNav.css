@@ -1,0 +1,7 @@
+.promo{
+  background: #DBC128;
+  color: #141414;
+  text-align: center;
+  position: sticky;
+  z-index: 999;
+}
