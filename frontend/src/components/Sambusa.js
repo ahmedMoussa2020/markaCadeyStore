@@ -4,6 +4,10 @@ import logger from "use-reducer-logger";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import SambusaView from "./SambusaView";
+import { Helmet } from "react-helmet-async";
+import LoadingBox from './LoadingBox';
+import MessageBox from './MessageBox';
+
 // import data from "../data.js";
 
 const reducer = (state, action) => {
@@ -41,12 +45,15 @@ function Sambusa() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Marka Cadey Store</title>
+      </Helmet>
       <h1>Sambusa</h1>
       <div className="products">
         {loading ? (
-          <div>Loading...</div>
+         <LoadingBox />
         ) : error ? (
-          <div>{error}</div>
+          <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <Row>
           {sambusas.map((sambusa) => (

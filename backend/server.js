@@ -32,6 +32,16 @@ app.get('/api/sambusas', (req, res) =>{
   res.send(data.sambusas);
 })
 
+app.get('/api/sambusas/slug/:slug', (req, res) =>{
+  const sambusa = data.sambusas.find((x) => x.slug === req.params.slug)
+  if(sambusa){
+    res.send(sambusa)
+  }else{
+    res.status(404).send({message: 'Product Not Found'})
+  }
+  res.send(data.sambusas);
+})
+
 app.use('/api/upload', uploadRouter);
 app.use("/api/seed", seedRouter);
 app.use("/api/products", productRouter);
